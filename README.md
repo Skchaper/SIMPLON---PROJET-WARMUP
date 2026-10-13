@@ -1,10 +1,10 @@
 <div align="center"><H1> Projet WARMUP - AIS - FONDAMENTAUX DES SYSTEMES ET RESEAUX </H1></div>
 
 ## 1 Objectifs
-• Révision et approfondissement des compétences fondamentales en systèmes et réseaux
-• Mise en place d’une infrastructure complète de maquettage
-• Acclimatation au travail en mode projet
-• Rédaction de documentation technique et projet
+• Révision et approfondissement des compétences fondamentales en systèmes et réseaux  
+• Mise en place d’une infrastructure complète de maquettage  
+• Acclimatation au travail en mode projet  
+• Rédaction de documentation technique et projet  
 
 ## 2 Prérequis
 • Accès au serveur Proxmox de la promo

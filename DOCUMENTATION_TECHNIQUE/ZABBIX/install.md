@@ -27,7 +27,7 @@
 
 ## 2. Installation de ZABBIX sur Linux
 
-Download/Zabbix ![Download/Zabbix(https://www.zabbix.com/fr/download)]
+(https://www.zabbix.com/fr/download)
 
 Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre distribution Linux, sa version, les composants Zabbix « Server, Frontend, Agent 2 », sa base de données et le serveur web voulu. 
 

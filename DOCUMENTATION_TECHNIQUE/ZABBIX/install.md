@@ -33,3 +33,17 @@ Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre 
 
 Pour ma part, je suis parti sur l’installation de Zabbix 7.4, sur Debian 13 avec une base de données MySQL et Apache comme serveur web.  
 
+### Récupérer le dépôt ZABBIX
+
+```bash
+wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.4+debian13_all.deb  
+dpkg -i zabbix-release_latest_7.4+debian13_all.deb  
+apt update  
+```
+
+
+
+
+
+
+

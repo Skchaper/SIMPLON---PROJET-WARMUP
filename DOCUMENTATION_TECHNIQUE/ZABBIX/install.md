@@ -69,7 +69,7 @@ Sur le serveur Zabbix, importez le schéma initial et les données. Vous serez i
 zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
 ```
 
-Désactivez l'option log_bin_trust_function_creators après l'importation du schéma de base de données.
+Désactivez l'option log_bin_trust_function_creators après l'importation du schéma de base de données.  
 
 ```bash
 # mysql -uroot -p
@@ -77,5 +77,31 @@ password
 mysql> set global log_bin_trust_function_creators = 0;
 mysql> quit;
 ```
+
+### Configurer la base de données pour le serveur ZABBIX
+
+Modifiez le fichier /etc/zabbix/zabbix_server.conf  
+
+```bash
+DBPassword=password
+```
+
+### Démarrer les processus du serveur et de l'agent ZABBIX
+
+Démarrez les processus du serveur et de l'agent Zabbix et configurez les pour qu'ils démarrent au démarrage du système.  
+
+```bash
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+```
+
+### Ouvrir la page Web de l'interface utilisateur de Zabbix
+
+L'URL par défaut de l'interface utilisateur de Zabbix lors de l'utilisation du serveur web Apache est http://host/zabbix  
+
+
+
+
+
 
 

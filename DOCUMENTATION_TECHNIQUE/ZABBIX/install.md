@@ -27,7 +27,9 @@
 
 ## 2. Installation de ZABBIX sur Linux
 
-Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre distribution Linux, sa version, les composants Zabbix « Server, Frontend, Agent 2 », sa base de données et le serveur web voulu.
+Download/Zabbix![https://www.zabbix.com/fr/download]
 
-Pour ma part, je suis parti sur l’installation de Zabbix 7.4, sur Rocky  Linux 9.6 avec une base de données MySQL et Apache comme serveur web.
+Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre distribution Linux, sa version, les composants Zabbix « Server, Frontend, Agent 2 », sa base de données et le serveur web voulu. 
+
+Pour ma part, je suis parti sur l’installation de Zabbix 7.4, sur Debian 13 avec une base de données MySQL et Apache comme serveur web.  
 

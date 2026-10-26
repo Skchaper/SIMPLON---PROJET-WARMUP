@@ -9,12 +9,12 @@
 - agent2 : Linux / Windows  
 
 **Taille de l'installation :** Petite  
-Nombre de métriques surveillées : 1000  
-Cœurs CPU/vCPU : 2  
-Mémoire (Gio) : 8  
-Base de données : Serveur Mysql, serveur Percona, serveur MariaDB, PostgreSQL  
-PHP : Version 8.0.0 minimum  
-Serveur Web : Apache 2.4 minimum / Nginx 1.20 minimum  
+    Nombre de métriques surveillées : 1000  
+    Cœurs CPU/vCPU : 2  
+    Mémoire (Gio) : 8  
+    Base de données : Serveur Mysql, serveur Percona, serveur MariaDB, PostgreSQL  
+    PHP : Version 8.0.0 minimum  
+    Serveur Web : Apache 2.4 minimum / Nginx 1.20 minimum  
 
 **Choix :** Zabbix, Apache2, PHP et MySQL  
 

@@ -18,7 +18,7 @@ Ce document décrit la procédure pour ajouter un **contrôleur de domaine secon
 
 * **Système d'exploitation :** Windows Server (2019 / 2022 / 2025) en édition **Core**.
 
-* **Domaine existant :** `entreprise.local` (géré par un premier DC, ex: `SRV-DC01` d'adresse IP `192.168.1.10`).
+* **Domaine existant :** `claas.lan` (géré par un premier DC, ex: `SRV-WIN-DC1` d'adresse IP `10.0.0.10`).
 
 * **Droits requis :** Compte membre du groupe *Administrateurs du domaine* (*Domain Admins*).
 
@@ -28,7 +28,7 @@ Connectez-vous à la console de votre serveur Core et ouvrez une session PowerSh
 
 ### 1. Renommer le serveur
 ```powershell
-Rename-Computer -NewName "SRV-DC02" -Restart
+Rename-Computer -NewName "SRV-WIN-DC2" -Restart
 ```
 *(Le serveur va redémarrer).*
 
@@ -36,10 +36,10 @@ Rename-Computer -NewName "SRV-DC02" -Restart
 Récupérez l'index de votre carte réseau (ifIndex) avec `Get-NetAdapter`, puis configurez l'IPv4 :
 ```powershell
 # Remplacer 'Ethernet' par le nom de votre interface si besoin
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "192.168.1.11" -PrefixLength 24 -DefaultGateway "192.168.1.1"
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.0.0.11" -PrefixLength 24 -DefaultGateway "255.255.255.0"
 
 # Définir le DNS primaire (doit pointer vers le DC existant pour joindre le domaine)
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses ("192.168.1.10","127.0.0.1")
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses ("10.0.0.10","127.0.0.1")
 ```
 
 ## 📦 Étape 2 : Installation du rôle AD DS en Server Core
@@ -63,12 +63,12 @@ Install-ADDSDomainController `
     -DomainName "entreprise.local" `
     -InstallDns:$true `
     -LogPath "C:\Windows\NTDS" `
-    -ReplicationSourceDC "SRV-DC01.entreprise.local" `
+    -ReplicationSourceDC "SRV-WIN-DC1.claas.lan" `
     -SysvolPath "C:\Windows\SYSVOL" `
     -Force:$true
 ```
 
-Le serveur va procéder à la réplication de l'annuaire depuis `SRV-DC01` puis redémarrer automatiquement.
+Le serveur va procéder à la réplication de l'annuaire depuis `SRV-WIN-DC1` puis redémarrer automatiquement.
 
 ## ✔️ Étape 4 : Vérification de la Réplication et de la Redondance
 
@@ -86,5 +86,3 @@ dcdiag /v
 ```
 
 Votre infrastructure dispose désormais d'une redondance Active Directory opérationnelle !
-
-*Généré avec ❤️ pour vos architectures haute disponibilité.*

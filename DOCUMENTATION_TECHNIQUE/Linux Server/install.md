@@ -1,5 +1,5 @@
-
-#deb cdrom:[Debian GNU/Linux 13.7.0 _Trixie_ - Official amd64 NETINST with firmware 20260912-09:35]/ trixie contrib main non-free non-free-firmware
+```bash
+# deb cdrom:[Debian GNU/Linux 13.7.0 _Trixie_ - Official amd64 NETINST with firmware 20260912-09:35]/ trixie contrib main non-free non-free-firmware
 
 deb http://deb.debian.org/debian/ trixie main non-free-firmware
 deb-src http://deb.debian.org/debian/ trixie main non-free-firmware
@@ -17,3 +17,4 @@ deb-src http://deb.debian.org/debian/ trixie-updates main non-free-firmware
 # entries were disabled at the end of the installation process.
 # For information about how to configure apt package sources,
 # see the sources.list(5) manual.
+```

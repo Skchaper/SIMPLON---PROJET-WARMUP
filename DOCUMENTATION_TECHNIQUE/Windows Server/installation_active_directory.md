@@ -107,4 +107,3 @@ Après le redémarrage automatique du serveur, vérifiez que l'AD fonctionne cor
 *   **Sauvegardes :** Planifiez des sauvegardes régulières de l'état du système (*System State*) et de la base de données NTDS.
 
 ---
-*Généré avec ❤️ pour vos documentations d'infrastructure.*

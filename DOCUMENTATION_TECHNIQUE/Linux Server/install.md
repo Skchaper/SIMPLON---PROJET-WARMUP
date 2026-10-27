@@ -1,4 +1,8 @@
 ```bash
+sudo nano /etc/apt/sources.list
+```
+
+```bash
 # deb cdrom:[Debian GNU/Linux 13.7.0 _Trixie_ - Official amd64 NETINST with firmware 20260912-09:35]/ trixie contrib main non-free non-free-firmware
 
 deb http://deb.debian.org/debian/ trixie main non-free-firmware

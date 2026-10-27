@@ -4,7 +4,9 @@
 • Si votre PC est sous Windows :  
 	1. Téléchargez l'installateur officiel : Virt-Viewer Windows MSI.  
 	2. Installez le fichier .msi téléchargé.  
+  
 • Si votre PC est sous Linux (Ubuntu / Debian / Mint) :  
+  
 	• Ouvrez votre terminal et installez le paquet :  
 
 ```bash

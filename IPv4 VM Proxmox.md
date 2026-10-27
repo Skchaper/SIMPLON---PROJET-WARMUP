@@ -1,7 +1,7 @@
-Réseau principal 10.0.0.0/24  
-Plage DHCP1 : 10.0.0.50 à 10.0.0.200 | garder : 10.0.0.1 à 10.0.0.49 pour les serveurs et .254 pour la passerelle  
-Réseau secondaire 10.0.1.0/24  
-Plage DHCP2 : 10.0.1.50 à 10.0.1.200 | garder : 10.0.1.1 à 10.0.1.49 pour les serveurs et 1.254 pour la passerelle  
+**Réseau principal 10.0.0.0/24**  
+**Plage DHCP1 :** 10.0.0.50 à 10.0.0.200 | garder : 10.0.0.1 à 10.0.0.49 pour les serveurs et .254 pour la passerelle  
+**Réseau secondaire 10.0.1.0/24**  
+**Plage DHCP2 :** 10.0.1.50 à 10.0.1.200 | garder : 10.0.1.1 à 10.0.1.49 pour les serveurs et 1.254 pour la passerelle  
 
 **4001** - AD | DNS | DHCP | WDS | RDS - GRP4-SRV-WIN-DC1 - **10.0.0.10**  
 

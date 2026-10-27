@@ -21,7 +21,6 @@ L'option est grisée car la carte graphique virtuelle de votre VM est actuelleme
 	2. Installez le fichier .msi téléchargé.  
   
 • Si votre PC est sous Linux (Ubuntu / Debian / Mint) :  
-  
 	• Ouvrez votre terminal et installez le paquet :  
 
 ```bash

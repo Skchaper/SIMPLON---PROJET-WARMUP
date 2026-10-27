@@ -32,11 +32,11 @@ Un Contrôleur de Domaine (DC) doit impérativement posséder une **adresse IP s
 
 1. Ouvrez les connexions réseau (`ncpa.cpl`).
 2. Configurez les propriétés IPv4 de la carte réseau :
-   * **Adresse IP :** `192.168.1.10` (exemple)
+   * **Adresse IP :** `10.0.0.10` (exemple)
    * **Masque de sous-réseau :** `255.255.255.0`
-   * **Passerelle par défaut :** `192.168.1.1`
-   * **Serveur DNS préféré :** `127.0.0.1` (ou l'adresse IP fixe du serveur lui-même).
-3. Renommez votre serveur avec un nom explicite (ex: `SRV-DC01`) via les propriétés système (`sysdm.cpl`), puis redémarrez si nécessaire.
+   * **Passerelle par défaut :** `10.0.0.254`
+   * **Serveur DNS préféré :** `8.8.8.8` (ou l'adresse IP fixe du serveur lui-même).
+3. Renommez votre serveur avec un nom explicite (ex: `SRV-WIN-DC1`) via les propriétés système (`sysdm.cpl`), puis redémarrez si nécessaire.
 
 ---
 
@@ -71,7 +71,7 @@ Install-ADDSForest `
     -CreateDnsDelegation:$false `
     -DatabasePath "C:\Windows\NTDS" `
     -DomainMode "WinThreshold" `
-    -DomainName "entreprise.local" `
+    -DomainName "claas.lan" `
     -DomainNetbiosName "ENTREPRISE" `
     -ForestMode "WinThreshold" `
     -InstallDns:$true `

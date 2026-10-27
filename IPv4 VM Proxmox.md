@@ -3,6 +3,9 @@
 **Réseau secondaire 10.0.1.0/24**  
 **Plage DHCP2 :** 10.0.1.50 à 10.0.1.200 | garder : 10.0.1.1 à 10.0.1.49 pour les serveurs et 1.254 pour la passerelle  
 
+Domaine Active Directory :   
+Hébergeur domaine web : duckdns  
+
 **4001** - AD | DNS | DHCP | WDS | RDS - GRP4-SRV-WIN-DC1 - **10.0.0.10**  
 
 **4002** - AD CORE - GR4-SRV-WIN-CORE - **10.0.0.11**  

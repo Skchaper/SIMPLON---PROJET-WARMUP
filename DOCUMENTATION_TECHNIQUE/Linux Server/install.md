@@ -1,5 +1,5 @@
 
-Editer le fichier de configuration sources.list pour permettre à la VM Debian 13 de mettre à jour les paquets, etc.  
+## Editer le fichier de configuration sources.list pour permettre à la VM Debian 13 de mettre à jour les paquets, etc.  
 
 ```bash
 sudo nano /etc/apt/sources.list

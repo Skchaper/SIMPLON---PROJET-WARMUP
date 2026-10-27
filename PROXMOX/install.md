@@ -1,4 +1,4 @@
-
+## Activer le copier/coller sur une VM dans PROXMOX
 
 **1. dégriser xterm.js (Solution recommandée en ligne de commande)**  
 
@@ -14,7 +14,7 @@ L'option est grisée car la carte graphique virtuelle de votre VM est actuelleme
 
 
 
-## Étape 1 : Installer Virt-Viewer sur votre ordinateur
+### Étape 1 : Installer Virt-Viewer sur votre ordinateur
 
 • Si votre PC est sous Windows :  
 	1. Téléchargez l'installateur officiel : Virt-Viewer Windows MSI.  
@@ -33,7 +33,7 @@ sudo apt install virt-viewer
 brew install virt-viewer
 ```
 
-## Étape 2 : Ouvrir la console
+### Étape 2 : Ouvrir la console
 
 Une fois le logiciel installé :  
 1. Retournez sur Proxmox et cliquez sur Console -> SPICE.  
@@ -42,7 +42,7 @@ Une fois le logiciel installé :
 4. Il s'ouvrira automatiquement avec Remote Viewer (le composant de Virt-Viewer) et la fenêtre de votre Debian 13 va apparaître en direct
 
 
-## Étape 3 : Activer enfin le copier-coller (Côté Debian)
+### Étape 3 : Activer enfin le copier-coller (Côté Debian)
 
 Puisque vous utilisez SPICE, pour que le copier-coller fonctionne entre votre PC et la VM, il faut installer l'agent à l'intérieur de votre Debian 13.  
 Dans la console qui vient de s'ouvrir (ou via SSH), tapez ces commandes :  

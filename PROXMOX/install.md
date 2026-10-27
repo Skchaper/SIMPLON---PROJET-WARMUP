@@ -1,4 +1,19 @@
 
+
+**1. dégriser xterm.js (Solution recommandée en ligne de commande)**  
+
+L'option reste grisée tant que Proxmox pense que la VM n'a aucun port de communication série.  
+• La solution : Allez dans l'onglet Hardware (Matériel) de votre VM Debian 13. Cliquez sur Add -> Serial Port (Port série). Laissez l'ID sur 0 et validez.  
+• Important : Éteignez complètement la VM (depuis Debian ou via un Shutdown dans Proxmox) puis redémarrez-la. Un simple "Reboot" à chaud ne suffit pas à Proxmox pour appliquer ce changement matériel. L'option xterm.js s'activera aussitôt au démarrage.  
+
+**2. Pour dégriser SPICE (Solution recommandée si vous utilisez une interface graphique)**  
+
+L'option est grisée car la carte graphique virtuelle de votre VM est actuellement configurée sur le mode par défaut (Standard VGA ou VMware).  
+• La solution : Allez dans l'onglet Hardware (Matériel) de votre VM, double-cliquez sur Display (Affichage) et changez le type de carte pour SPICE (qxl).  
+• Important : Là aussi, effectuez un Arrêt complet / Démarrage de la VM pour valider la modification. L'option SPICE sera instantanément disponible.  
+
+
+
 ## Étape 1 : Installer Virt-Viewer sur votre ordinateur
 
 • Si votre PC est sous Windows :  

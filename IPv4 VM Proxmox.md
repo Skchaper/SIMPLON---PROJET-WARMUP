@@ -20,7 +20,7 @@ Hébergeur domaine web : duckdns
 
 **4006** - Conteneurs DOCKER Debian 13 - GRP4-SRV-DEB-DOCKER - **10.0.0.14**  
 
-**4007** - Serveur de fichier (Windows Server) - GRP4-SRV-WIN-DATA - **10.0.0.15**  
+**4007** - Serveur de fichier | WSUS (Windows Server) - GRP4-SRV-WIN-DATAS - **10.0.0.15**  
 
 **4008** - PC Client administrateur - GRP4-CLI-WIN-ADM - **10.0.0.50**  
 

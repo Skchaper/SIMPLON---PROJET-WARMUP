@@ -36,7 +36,7 @@ Rename-Computer -NewName "SRV-WIN-DC2" -Restart
 Récupérez l'index de votre carte réseau (ifIndex) avec `Get-NetAdapter`, puis configurez l'IPv4 :
 ```powershell
 # Remplacer 'Ethernet' par le nom de votre interface si besoin
-New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.0.0.11" -PrefixLength 24 -DefaultGateway "255.255.255.0"
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "10.0.0.11" -PrefixLength 24 -DefaultGateway "10.0.0.254"
 
 # Définir le DNS primaire (doit pointer vers le DC existant pour joindre le domaine)
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses ("10.0.0.10","127.0.0.1")

@@ -31,7 +31,9 @@ https://www.zabbix.com/fr/download
 
 Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre distribution Linux, sa version, les composants Zabbix « Server, Frontend, Agent 2 », sa base de données et le serveur web voulu. 
 
-Pour ma part, je suis parti sur l’installation de Zabbix 7.4, sur Debian 13 avec une base de données MySQL et Apache comme serveur web.  
+Pour notre part, nous sommes parti sur l’installation de Zabbix 7.4, sur Debian 13 avec une base de données MySQL et Apache comme serveur web.  
+
+![.png]()
 
 ### Récupérer le dépôt ZABBIX
 

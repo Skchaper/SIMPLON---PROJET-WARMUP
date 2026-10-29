@@ -5,15 +5,15 @@
 
 Sur la page web d'administration ZABBIX, allez dans **Surveillance** puis dans **Hôtes** :  
 
-![]()
+![chrome_WX6Tx2NdFQ.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_WX6Tx2NdFQ.png)
 
 Une fois arrivé sur la page principale des Hôtes, cliquez sur **Créer un hôte** : 
 
-![]()
+![chrome_sPDHsvShvc.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_sPDHsvShvc.png)
 
 La page **Nouvel hôte** s'ouvre, remplissez là comme suit et en l'adaptant à l'équipement que vous souhaitez ajouter à la supervision :  
 
-![]()
+![chrome_vX51NfJWhr.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_vX51NfJWhr.png)
 
 1. **Nom de l'hôte :** Nom de la machine que vous allez superviser /!\DOIT CORRESPONDRE A LA VALEUR INDIQUEE DANS LE FICHIER DE CONFIGURATION : zabbix_agent2.conf/!\  
 2. **Modèles :** Cliquez sur **Sélectionner**, dans la nouvelle fenêtre cliquez également sur **Sélectionner**, choisissez le groupe qui correspond à votre type d'équipement (ici **Templates/Operating systems**), cochez Windows by Zabbix agent active, recliquez sur **Sélectionner**.  

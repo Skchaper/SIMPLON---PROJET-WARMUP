@@ -1,7 +1,7 @@
 # Sommaire
 -[1. Prérequis](#1-prérequis)  
 -[2. Installation de ZABBIX sur Linux](#2-installation-de-zabbix-sur-linux)  
--[3. Installation de l'agent ZABBIX](#3-installation-de-l-agent-zabbix)    
+-[3. Installation de l'agent ZABBIX](#3-installation-de-lagent-zabbix)    
 
 # Installation de ZABBIX
 

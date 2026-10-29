@@ -166,15 +166,36 @@ Enfin redémarrez le service pour qu'il charge la nouvelle configuration :
 sudo systemctl restart zabbix-agent2
 ```
 
-
-
-
 ### Installation sur un Windows Serveur 2022  
 
+Pour l'installation sur Windows Serveur 2022, toujours sur le site de ZABBIX (https://www.zabbix.com/download_agents), indiquez les informations sur l'image suivante :  
+![chrome_eX2iB2t2Az.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_eX2iB2t2Az.png)
+
+Puis télécharger l'agent 1 ou l'agent 2 suivant le type de communication souhaitée entre l'agent et le serveur :  
+
+![chrome_u6nAIfbCCs.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_u6nAIfbCCs.png)
+
+Une fois téléchargé, lancez le .msi et suivez les étapes suivantes :  
+
+![chrome_NnSgpOXLEt.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_NnSgpOXLEt.png)
+
+![chrome_vHoJ7em2AW.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_vHoJ7em2AW.png)
+
+![chrome_xCBnPRWwk7.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_xCBnPRWwk7.png)
+
+![chrome_9k2cwq3XPI.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_9k2cwq3XPI.png)
+
+![chrome_oiC8GBRqjG.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_oiC8GBRqjG.png)
+
+Après avoir terminé l'installation, assurez vous d'avoir créer l'hôte sur l'interface de ZABBIX (cf. USER_GUIDE.md).  
 
 ### Installation sur un PC Windows 11  
 
+Pour l'installation sur Windows 11, toujours sur le site de ZABBIX (https://www.zabbix.com/download_agents), indiquez les informations sur l'image suivante :  
 
+![chrome_h9K86IgVrE.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_h9K86IgVrE.png)
 
+Puis télécharger l'agent 1 ou l'agent 2 suivant le type de communication souhaitée entre l'agent et le serveur :  
 
+![chrome_u6nAIfbCCs.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_u6nAIfbCCs.png)
 

@@ -1,5 +1,5 @@
 # Sommaire
--[1. Prérequis](#1. Prérequis)
+-[1. Prérequis](#1-prérequis)
 
 # Installation de ZABBIX
 

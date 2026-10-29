@@ -99,7 +99,78 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 L'URL par défaut de l'interface utilisateur de Zabbix lors de l'utilisation du serveur web Apache est http://host/zabbix  
 
+## 3. Installation de l'agent ZABBIX  
 
+### Installation sur un serveur Debian 13  
+
+Passons maintenant à l’installation de l’agent 2 sur **SRV-DEB-DOCKER** par exemple, afin que des données commencent à remonter dans Zabbix. Retournez sur le site de Zabbix (https://www.zabbix.com/download_agents), puis allez dans « Packages Zabbix ». Sélectionnez les informations liées à votre distribution puis sélectionnez « Agent 2 » en composant :  
+
+![.png]()
+
+Puis suivez les commandes de la page de ZABBIX :  
+
+**Install and configure Zabbix for your platform**  
+
+**a. Install Zabbix repository**  
+
+```bash
+wget https://repo.zabbix.com/zabbix/7.4/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.4+debian13_all.deb
+dpkg -i zabbix-release_latest_7.4+debian13_all.deb
+apt update
+```
+
+**b. Install Zabbix agent 2**  
+
+Install zabbix-agent2 package.  
+
+```bash
+apt install zabbix-agent2
+```
+
+**c. Install Zabbix agent 2 plugins**  
+
+You may want to install Zabbix agent 2 plugins.  
+
+```bash
+apt install zabbix-agent2-plugin-mongodb zabbix-agent2-plugin-mssql zabbix-agent2-plugin-postgresql
+```
+
+**d. Start Zabbix agent 2 process**  
+
+Start Zabbix agent 2 process and make it start at system boot.  
+
+```bash
+systemctl restart zabbix-agent2
+systemctl enable zabbix-agent2
+```
+
+Une fois le service zabbix-agent2 téléchargé et démarré sans erreur, modifier le fichier suivant :  
+
+```bash
+sudo nano /etc/zabbix/zabbix_agent2.conf
+```
+
+Pour un agent passif cherchez la ligne Server= (CTRL + F dans nano) et remplacez l'IP par celle du serveur ZABBIX (ici, 10.0.0.12) :  
+
+![.png]()
+
+Pour un agent actif cherchez la ligne ServerActive= (CTRL + F dans nano) et remplacez l'IP par celle du serveur ZABBIX (ici, 10.0.0.12) et le Hostname= par le nom d'hôte renseigné préalablement dans la partie interface Web de ZABBIX ([cf. USER_GUIDE.md de ZABBIX partie création d'un hôte], ici, SRV-DEB-DOCKER):  
+
+![.png]()
+
+Enfin redémarrez le service pour qu'il charge la nouvelle configuration :  
+
+```bash
+sudo systemctl restart zabbix-agent2
+```
+
+
+
+
+### Installation sur un Windows Serveur 2022  
+
+
+### Installation sur un PC Windows 11  
 
 
 

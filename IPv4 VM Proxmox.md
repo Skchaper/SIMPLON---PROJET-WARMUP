@@ -28,6 +28,6 @@ Hébergeur domaine web : duckdns
 
 **4010** - Firewall2 PfSense - GRP4-FW-PfSense2 - **10.0.1.254** (passerelle)  
 
-**4011** - Serveur de Sauvegardes Veeam - GRP4-SRV-BACKUP-VEEAM - **10.0.0.20**  
+**4011** - Serveur de Sauvegardes Veeam - GRP4-SRV-BCKUP-VEEAM - **10.0.0.20**  
 
 **4012** -   

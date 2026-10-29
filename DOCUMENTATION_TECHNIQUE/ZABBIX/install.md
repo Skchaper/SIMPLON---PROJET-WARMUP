@@ -1,3 +1,6 @@
+# Sommaire
+- [1. Prérequis](## 1. Prérequis)
+
 # Installation de ZABBIX
 
 ## 1. Prérequis

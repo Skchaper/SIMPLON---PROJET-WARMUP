@@ -33,7 +33,7 @@ Sélectionnez « Packages Zabbix » puis choisissez la version de Zabbix, votre 
 
 Pour notre part, nous sommes parti sur l’installation de Zabbix 7.4, sur Debian 13 avec une base de données MySQL et Apache comme serveur web.  
 
-![.png]()
+![chrome_GakbQZZ8gH.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_GakbQZZ8gH.png)
 
 ### Récupérer le dépôt ZABBIX
 
@@ -107,7 +107,7 @@ L'URL par défaut de l'interface utilisateur de Zabbix lors de l'utilisation du 
 
 Passons maintenant à l’installation de l’agent 2 sur **SRV-DEB-DOCKER** par exemple, afin que des données commencent à remonter dans Zabbix. Retournez sur le site de Zabbix (https://www.zabbix.com/download_agents), puis allez dans « Packages Zabbix ». Sélectionnez les informations liées à votre distribution puis sélectionnez « Agent 2 » en composant :  
 
-![.png]()
+![chrome_tfNY76vrw4.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_tfNY76vrw4.png)
 
 Puis suivez les commandes de la page de ZABBIX :  
 
@@ -154,11 +154,11 @@ sudo nano /etc/zabbix/zabbix_agent2.conf
 
 Pour un agent passif cherchez la ligne Server= (CTRL + F dans nano) et remplacez l'IP par celle du serveur ZABBIX (ici, 10.0.0.12) :  
 
-![.png]()
+![chrome_qL9ApSeltr.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_qL9ApSeltr.png)
 
 Pour un agent actif cherchez la ligne ServerActive= (CTRL + F dans nano) et remplacez l'IP par celle du serveur ZABBIX (ici, 10.0.0.12) et le Hostname= par le nom d'hôte renseigné préalablement dans la partie interface Web de ZABBIX ([cf. USER_GUIDE.md de ZABBIX partie création d'un hôte], ici, SRV-DEB-DOCKER):  
 
-![.png]()
+![chrome_i4Zxj7xTNG.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_i4Zxj7xTNG.png)
 
 Enfin redémarrez le service pour qu'il charge la nouvelle configuration :  
 

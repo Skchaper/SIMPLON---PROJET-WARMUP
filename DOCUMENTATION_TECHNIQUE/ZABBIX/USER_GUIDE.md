@@ -36,5 +36,30 @@ Cliquez sur le lien **Elements** sur la ligne de votre serveur Windows.
 Cochez la **case en haut de la liste** pour sélectionner tous les éléments (ou quelques-uns comme Agent ping).  
 Cliquez sur le bouton **Exécuter maintenant** tout en bas de la page.  
 
+## Exemple d'utilisation de la supervision
 
+Depuis le dashboard (que vous avez évidemment personnalisé en utilisant la documentation officielle de zabbix), vous voyez des alertes de supervision remonter :  
 
+![chrome_0ARK2iYegQ.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_0ARK2iYegQ.png)
+
+Les bleues et les jaunes sont respectivement des informations et des avertissements dont le degré de sévérité est bas :  
+
+![chrome_94RSuX5xBm.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_94RSuX5xBm.png)
+
+Les oranges quant à eux sont à surveiller, nous pouvons voir ici des problèmes avec le service de mise à jour de Google :  
+
+![chrome_KWBdJY5wnQ.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_KWBdJY5wnQ.png)
+
+En cliquant sur l'un d'entre eux, on arrive sur une fenêtre liée au problème :   
+
+![chrome_4ms3Uc5JRg.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_4ms3Uc5JRg.png)
+
+Pour le résoudre, on prend la main sur l'équipement concerné, ici CLI-WIN-ADM, le pc d'administration et on fait les actions suivantes :  
+
+Appuyer sur Win+R puis taper wsreset.exe. Cette action devrait résoudre le problème en capture d'écran (AppXSvc). Retournez sur l'interface web de ZABBIX :  
+
+![chrome_mfBY3rRQOc.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_mfBY3rRQOc.png)
+
+Le problème est résolu.  
+
+ZABBIX permet de créer des déclencheurs, de personnaliser le dashboard, de checker tout un tas d'information sur les équipements supervisés (charge CPU, utilisation de la mémoire vive, etc). A vous de le personnaliser selon vos besoins.  

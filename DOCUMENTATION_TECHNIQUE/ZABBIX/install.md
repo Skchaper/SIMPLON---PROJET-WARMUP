@@ -1,5 +1,6 @@
 # Sommaire
 -[1. Prérequis](#1-prérequis)
+-[2. Installation de ZABBIX sur Linux](#2-installation-de-zabbix-sur-linux)
 
 # Installation de ZABBIX
 

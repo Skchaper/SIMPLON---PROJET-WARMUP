@@ -175,7 +175,7 @@ Puis télécharger l'agent 1 ou l'agent 2 suivant le type de communication souha
 
 ![chrome_u6nAIfbCCs.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_u6nAIfbCCs.png)
 
-Une fois téléchargé, lancez le .msi et suivez les étapes suivantes :  
+Une fois téléchargé, lancez le .msi et suivez les étapes suivantes (remplacez CLI-WIN-ADM par SRV-WIN-DC1 pour l'exemple avec un serveur windows 2022):  
 
 ![chrome_NnSgpOXLEt.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_NnSgpOXLEt.png)
 
@@ -199,3 +199,16 @@ Puis télécharger l'agent 1 ou l'agent 2 suivant le type de communication souha
 
 ![chrome_u6nAIfbCCs.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_u6nAIfbCCs.png)
 
+Une fois téléchargé, lancez le .msi et suivez les étapes suivantes :  
+
+![chrome_NnSgpOXLEt.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_NnSgpOXLEt.png)
+
+![chrome_vHoJ7em2AW.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_vHoJ7em2AW.png)
+
+![chrome_xCBnPRWwk7.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_xCBnPRWwk7.png)
+
+![chrome_9k2cwq3XPI.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_9k2cwq3XPI.png)
+
+![chrome_oiC8GBRqjG.png](https://github.com/Skchaper/SIMPLON---PROJET-WARMUP/blob/main/DOCUMENTATION_TECHNIQUE/ZABBIX/screens/chrome_oiC8GBRqjG.png)
+
+Après avoir terminé l'installation, assurez vous d'avoir créer l'hôte sur l'interface de ZABBIX (cf. USER_GUIDE.md).  

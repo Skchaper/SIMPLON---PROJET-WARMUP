@@ -73,24 +73,22 @@ o OpenVPN pour le client-to-site
 o IPSec pour le site-to-site vers une VM de votre ordinateur personnel  
 
 ### C. Serveurs Linux
-• Mise en place d'un serveur web avec WordPress
-• Déploiement et configuration d'un serveur GLPI (Gestion Libre de Parc Informatique)
-• Déploiement d'un serveur de fichiers
-• Déploiement et configuration d’un serveur de supervision (mise en supervision des différents
-serveurs de l’infrastructure)
+• Mise en place d'un serveur web avec WordPress  
+• Déploiement et configuration d'un serveur GLPI (Gestion Libre de Parc Informatique)  
+• Déploiement d'un serveur de fichiers  
+• Déploiement et configuration d’un serveur de supervision (mise en supervision des différents  
+serveurs de l’infrastructure)  
 
 ### D.Serveurs Windows :
-Un maximum d’opérations devra être réalisées en lignes de commandes PowerShell (joindre vos
-commandes dans le dossier technique)
-• Définition d’une convention de nommage pour l’ensemble des objets AD
-• Configuration d'un Active Directory (AD) sur Windows Server 2022
-• Mise en place de la réplication avec un serveur core
-• Mise en place de services DNS et DHCP
-• Service WDS, RDS, Serveur de fichiers
-• Configuration d'un client Windows 10 et jonction au domaine pour les tests
-• Configuration des ordinateurs, comptes, groupes, GPO, quotas
-o Un objet PC créé et attribué par utilisateur (joindre un tableau d’attribution dans le
-DT)
+Un maximum d’opérations devra être réalisées en lignes de commandes PowerShell (joindre vos commandes dans le dossier technique)  
+• Définition d’une convention de nommage pour l’ensemble des objets AD  
+• Configuration d'un Active Directory (AD) sur Windows Server 2022  
+• Mise en place de la réplication avec un serveur core  
+• Mise en place de services DNS et DHCP  
+• Service WDS, RDS, Serveur de fichiers  
+• Configuration d'un client Windows 10 et jonction au domaine pour les tests  
+• Configuration des ordinateurs, comptes, groupes, GPO, quotas  
+o Un objet PC créé et attribué par utilisateur (joindre un tableau d’attribution dans le DT)  
 
 ### Utilisateurs et groupes
 

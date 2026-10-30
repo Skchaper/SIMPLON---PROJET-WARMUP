@@ -22,9 +22,9 @@ Hébergeur domaine web : duckdns
 
 **4007** - Serveur de fichier | WSUS (Windows Server) - GRP4-SRV-WIN-DATAS - **10.0.0.15**  
 
-**4008** - PC Client administrateur - GRP4-CLI-WIN-ADM - **10.0.0.50**  
+**4008** - PC Client administrateur - GRP4-CLI-WIN-ADM - **10.0.0.51**  
 
-**4009** - PC Client utilisateur (test GPO, etc.) - GRP4-CLI-WIN-USR - **10.0.0.51**  
+**4009** - PC Client utilisateur (test GPO, etc.) - GRP4-CLI-WIN-USR - **10.0.0.52**  
 
 **4010** - Firewall2 PfSense - GRP4-FW-PfSense2 - **10.0.1.254** (passerelle)  
 

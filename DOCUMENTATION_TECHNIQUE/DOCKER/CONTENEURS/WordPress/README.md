@@ -100,26 +100,27 @@ volumes:
 
 
 Attention : remplacer proxy par le nom réel du réseau Docker de Traefik si différent, et websecure par le nom réel de son EntryPoint HTTPS si nécessaire.
-5. Vérification de la configuration
+
+##5. Vérification de la configuration
 docker compose config
 
 
-6. Téléchargement des images
+##6. Téléchargement des images
 docker compose pull
 
 
-7. Démarrage des conteneurs
+##7. Démarrage des conteneurs
 docker compose up -d
 
 
-8. Vérification des conteneurs
+##8. Vérification des conteneurs
 docker ps
 
 
 docker compose ps
 
 
-9. Consultation des journaux
+##9. Consultation des journaux
 docker compose logs -f
 
 
@@ -129,11 +130,11 @@ docker logs wordpress-web
 docker logs wordpress-db
 
 
-10. Vérification du réseau Docker
+##10. Vérification du réseau Docker
 docker network inspect proxy
 
 
-11. Configuration DNS Windows Server
+##11. Configuration DNS Windows Server
 Dans PowerShell :
 Add-DnsServerPrimaryZone -Name "ClaasUCF.local" -ReplicationScope "Domain"
 
@@ -143,15 +144,15 @@ Add-DnsServerResourceRecordA -ZoneName "ClaasUCF.local" -Name "wordpress" -IPv4A
 
 
 Remplacer IP_DEBIAN par l'adresse IP réelle du serveur hébergeant Traefik.
-12. Vérification DNS depuis Windows
+##12. Vérification DNS depuis Windows
 nslookup wordpress.home.arpa
 
 
-13. Vérification de l'accès HTTPS
+##13. Vérification de l'accès HTTPS
 curl -I https://wordpress.ClaasUCF.local
 
 
-14. Administration Docker
+##14. Administration Docker
 Arrêter les conteneurs :
 docker compose stop
 
@@ -168,13 +169,13 @@ Redémarrer le déploiement :
 docker compose up -d
 
 
-15. Sauvegarde de la base de données
+##15. Sauvegarde de la base de données
 docker compose exec -T wordpress-db sh -c \
 'exec mariadb-dump -u"$MARIADB_USER" -p"$MARIADB_PASSWORD" "$MARIADB_DATABASE"' \
 > sauvegarde-wordpress.sql
 
 
-16. Mise à jour des conteneurs
+##16. Mise à jour des conteneurs
 docker compose pull
 docker compose up -d
 

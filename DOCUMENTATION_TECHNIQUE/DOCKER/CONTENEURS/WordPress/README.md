@@ -1,12 +1,14 @@
-Installation WordPress avec Docker, Traefik 3.7 et DNS Windows
+# Installation WordPress avec Docker, Traefik 3.7 et DNS Windows
 
-1. Création du dossier WordPress
+## 1. Création du dossier WordPress
+
+```bash
 sudo mkdir -p /opt/wordpress
 sudo chown -R $USER:$USER /opt/wordpress
 cd /opt/wordpress
+```
 
-
-2. Création du fichier .env
+## 2. Création du fichier .env
 nano .env
 
 DOMAIN=wordpress.ClaasUCF.local
@@ -19,7 +21,7 @@ MARIADB_ROOT_PASSWORD=REMPLACER_PAR_UN_AUTRE_MOT_DE_PASSE_FORT
 chmod 600 .env
 
 
-3. Création du réseau Docker
+## 3. Création du réseau Docker
 docker network ls
 
 

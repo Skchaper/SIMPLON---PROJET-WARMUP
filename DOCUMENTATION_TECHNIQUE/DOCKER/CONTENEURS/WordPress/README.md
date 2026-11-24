@@ -1,4 +1,5 @@
 Installation WordPress avec Docker, Traefik 3.7 et DNS Windows
+
 1. Création du dossier WordPress
 sudo mkdir -p /opt/wordpress
 sudo chown -R $USER:$USER /opt/wordpress
@@ -8,8 +9,7 @@ cd /opt/wordpress
 2. Création du fichier .env
 nano .env
 
-
-DOMAIN=wordpress.home.arpa
+DOMAIN=wordpress.ClaasUCF.local
 MARIADB_DATABASE=wordpress
 MARIADB_USER=wpuser
 MARIADB_PASSWORD=REMPLACER_PAR_UN_MOT_DE_PASSE_FORT
@@ -133,11 +133,11 @@ docker network inspect proxy
 
 11. Configuration DNS Windows Server
 Dans PowerShell :
-Add-DnsServerPrimaryZone -Name "home.arpa" -ReplicationScope "Domain"
+Add-DnsServerPrimaryZone -Name "ClaasUCF.local" -ReplicationScope "Domain"
 
 
 Créer l'enregistrement DNS :
-Add-DnsServerResourceRecordA -ZoneName "home.arpa" -Name "wordpress" -IPv4Address "IP_DEBIAN"
+Add-DnsServerResourceRecordA -ZoneName "ClaasUCF.local" -Name "wordpress" -IPv4Address "IP_DEBIAN"
 
 
 Remplacer IP_DEBIAN par l'adresse IP réelle du serveur hébergeant Traefik.
@@ -146,7 +146,7 @@ nslookup wordpress.home.arpa
 
 
 13. Vérification de l'accès HTTPS
-curl -I https://wordpress.home.arpa
+curl -I https://wordpress.ClaasUCF.local
 
 
 14. Administration Docker
@@ -178,7 +178,7 @@ docker compose up -d
 
 
 Adresse du site :
-https://wordpress.home.arpa
+https://wordpress.ClaasUCF.local
 
 
-Important : pour que HTTPS fonctionne sans avertissement, Traefik doit disposer d'un certificat signé par ton autorité de certification locale, avec wordpress.home.arpa comme nom DNS, et les postes Windows doivent faire confiance à cette autorité. Le DNS seul ne suffit pas à activer HTTPS.
+Important : pour que HTTPS fonctionne sans avertissement, Traefik doit disposer d'un certificat signé par ton autorité de certification locale, avec wordpress.ClaasUCF.local comme nom DNS, et les postes Windows doivent faire confiance à cette autorité. Le DNS seul ne suffit pas à activer HTTPS.

@@ -1,25 +1,8 @@
 # Installation WordPress avec Docker, Traefik 3.7 et DNS Windows
-Procédure complète d’installation  WordPress avec Docker et Traefik 3.7 déjà installé, sur serveur Debian 13.
-
-Élément
-Configuration
-Dossier
-/opt/wordpress
-Domaine local
-wordpress.claas.lan
-Serveur Docker
-10.0.0.14
-Conteneur Web
-WordPress
-Base de données
-MariaDB
-Reverse proxy
-Traefik 3.7
-DNS
-Windows Server
 
 Important : je pars sur un accès local en HTTP. Ton domaine .lan ne permet pas d'obtenir un certificat Let's Encrypt. On pourra configurer HTTPS avec un certificat de ton autorité de certification locale.
 Avant de créer les conteneurs, il faut récupérer le réseau Docker et le nom de l'EntryPoint réellement utilisés par ton Traefik. On ne doit pas modifier sa configuration au hasard.
+
 1. Vérifier Traefik
 Sur Debian, exécute :
 docker ps
@@ -27,11 +10,11 @@ Puis :
 docker network ls
 Ensuite, repère le nom du conteneur Traefik dans le résultat et exécute, en remplaçant traefik si nécessaire :
 docker inspect traefik_default --format '{{json .NetworkSettings.Networks}}'
-2. Créer le dossier WordPress
+3. Créer le dossier WordPress
 Une fois les informations de Traefik vérifiées :
 sudo mkdir -p /opt/wordpress
 cd /opt/wordpress
-3. Créer le fichier .env
+4. Créer le fichier .env
 sudo nano /opt/wordpress/.env
 Contenu :
 DOMAIN=wordpress.claas.lan
